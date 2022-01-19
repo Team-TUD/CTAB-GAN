@@ -1,10 +1,22 @@
 # CTAB-GAN
 This is the official git paper [CTAB-GAN: Effective Table Data Synthesizing](https://proceedings.mlr.press/v157/zhao21a.html). The paper is published on Asian Conference on Machine Learning (ACML 2021), please check our pdf on PMLR website for our newest version of [paper](https://proceedings.mlr.press/v157/zhao21a.html), it adds more content on time consumption analysis of training CTAB-GAN. If you have any question, please contact `z.zhao-8@tudelft.nl` for more information.
 
+
+## Prerequisite
+
+The required package version
+```
+numpy==1.21.0
+torch==1.9.1
+pandas==1.2.4
+sklearn==0.24.1
+dython==0.6.4.post1
+scipy==1.4.1
+```
+
 ## Example
 `Experiment_Script_Adult.ipynb` is an example notebook for training CTAB-GAN with Adult dataset. The dataset is alread under `Real_Datasets` folder.
 The evaluation code is also provided.
-
 
 ## For large dataset
 
