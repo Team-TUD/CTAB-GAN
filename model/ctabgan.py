@@ -1,17 +1,35 @@
-"""
-Generative model training algorithm based on the CTABGANSynthesiser
-
-"""
 import pandas as pd
 import time
-from model.pipeline.data_preparation import DataPrep
-from model.synthesizer.ctabgan_synthesizer import CTABGANSynthesizer
+# Used for pre/post-processing of the input/generated data
+from model.pipeline.data_preparation import DataPrep 
+# Model class for the CTABGANSynthesizer
+from model.synthesizer.ctabgan_synthesizer import CTABGANSynthesizer 
 
 import warnings
 
 warnings.filterwarnings("ignore")
 
 class CTABGAN():
+
+    """
+    Generative model training class based on the CTABGANSynthesizer model
+
+    Variables:
+    1) raw_csv_path -> path to real dataset used for generation
+    2) test_ratio -> parameter to choose ratio of size of test to train data
+    3) categorical_columns -> list of column names with a categorical distribution
+    4) log_columns -> list of column names with a skewed exponential distribution
+    5) mixed_columns -> dictionary of column name and categorical modes used for "mix" of numeric and categorical distribution 
+    6) integer_columns -> list of numeric column names without floating numbers  
+    7) problem_type -> dictionary of type of ML problem (classification/regression) and target column name
+    8) epochs -> number of training epochs
+
+    Methods:
+    1) __init__() -> handles instantiating of the object with specified input parameters
+    2) fit() -> takes care of pre-processing and fits the CTABGANSynthesizer model to the input data 
+    3) generate_samples() -> returns a generated and post-processed sythetic dataframe with the same size and format as per the input data 
+
+    """
 
     def __init__(self,
                  raw_csv_path = "Real_Datasets/Adult.csv",
