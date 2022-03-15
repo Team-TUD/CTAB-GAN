@@ -217,7 +217,7 @@ def stat_sim(real_path,fake_path,cat_cols=None):
       # Computing the statistical similarity between scaled real and synthetic numerical distributions 
       num_stat.append(wasserstein_distance(l1,l2))
 
-    return [np.mean(num_stat),np.mean(cat_stat),corr_dist]
+  return [np.mean(num_stat),np.mean(cat_stat),corr_dist]
 
 def privacy_metrics(real_path,fake_path,data_percent=15):
 
