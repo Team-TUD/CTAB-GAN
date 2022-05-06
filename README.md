@@ -13,6 +13,7 @@ sklearn==0.24.1
 dython==0.6.4.post1
 scipy==1.4.1
 ```
+The sklean package in newer version has updated its function for `sklearn.mixture.BayesianGaussianMixture`. Therefore, user should use this proposed sklearn version to successfully run the code!
 
 ## Example
 `Experiment_Script_Adult.ipynb` is an example notebook for training CTAB-GAN with Adult dataset. The dataset is alread under `Real_Datasets` folder.
