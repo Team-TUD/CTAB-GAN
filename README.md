@@ -1,5 +1,5 @@
 # NEWS!
-The CTAB-GAN+ [code](https://github.com/Team-TUD/CTAB-GAN-Plus) is released. [CTAB-GAN+](https://arxiv.org/abs/2204.00401) updates the CTAB-GAN with new losses, the training is more stable and efficient. It supports Classification and Regression dataset. You can also indicate the `problem_type` as `None` in CTAB-GAN+ code. 
+The CTAB-GAN+ [code](https://github.com/Team-TUD/CTAB-GAN-Plus) is released. [CTAB-GAN+](https://arxiv.org/abs/2204.00401) updates the CTAB-GAN with new losses (i.e., WGAN+GP) and new feature engineering (i.e., general transform), the training is more stable and efficient. It supports Classification and Regression dataset. You can also indicate the `problem_type` as `None` in CTAB-GAN+ code. 
 
 # CTAB-GAN
 This is the official git paper [CTAB-GAN: Effective Table Data Synthesizing](https://proceedings.mlr.press/v157/zhao21a.html). The paper is published on Asian Conference on Machine Learning (ACML 2021), please check our pdf on PMLR website for our newest version of [paper](https://proceedings.mlr.press/v157/zhao21a.html), it adds more content on time consumption analysis of training CTAB-GAN. If you have any question, please contact `z.zhao-8@tudelft.nl` for more information. 
