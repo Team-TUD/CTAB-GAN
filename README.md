@@ -1,6 +1,6 @@
 # NEWS! - 19/11/2023
 Our new paper [TabuLa: Harnessing Language Models for Tabular Data Synthesis](https://arxiv.org/abs/2310.12746) is on arxiv now! The code is published 
-[here](https://github.com/zhao-zilong/Tabula). Tabula improves tabular data synthesis by leveraging language model structures without the burden of pre-trained model weights. It offers a faster training process by preprocessing tabular data to shorten token sequence, which sharply reducing training time while consistently delivering higher-quality synthetic data. Its training time is longer than CTAB-GAN+, but the synthetic data fidelity is amazing!
+[here](https://github.com/zhao-zilong/Tabula). Tabula improves tabular data synthesis by leveraging language model structures without the burden of pre-trained model weights. It offers a faster training process by preprocessing tabular data to shorten token sequence, which sharply reducing training time while consistently delivering higher-quality synthetic data. Its training time is longer than CTAB-GAN+, but the synthetic data fidelity is amazing! **It also works for high-dimentional categorical columns!**
 
 # NEWS! - 09/10/2022
 The CTAB-GAN+ [code](https://github.com/Team-TUD/CTAB-GAN-Plus) is released. [CTAB-GAN+](https://arxiv.org/abs/2204.00401) updates the CTAB-GAN with new losses (i.e., WGAN+GP) and new feature engineering (i.e., general transform), the training is more stable and efficient. The problem type supports Classification and Regression dataset. You can also indicate the `problem_type` as `None` in CTAB-GAN+ code. 
